@@ -1,15 +1,19 @@
 <template name="login">
+  {{> loginButtons}}
   <h1>login</h1>
 </template>
 
-<template name="signup">
-  <h1>signup</h1>
-</template>
-
 <template name="dashboard">
+  {{> userInfo}}
   <h1>dashboard</h1>
 </template>
 
 <template name="settings">
+  {{> userInfo}}
   <h1>settings</h1>
+</template>
+
+
+<template name="userInfo">
+  <a href="/logout">Logout</a>
 </template>
